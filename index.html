@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css" integrity="sha384-7ynz3n3tAGNUYFZD3cWe5PDcE36xj85vyFkawcF6tIwxvIecqKvfwLiaFdizhPpN" crossorigin="anonymous">
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Selena</title>
+</head>
+<body>
+    <header>
+       <div class="frenteflores">
+       </div>
+       <img class="arrowdoble" src="./figuras/icons8-doble-izquierda-64.png" alt="">
+
+    </header>
+
+    <div class="audiodiv">
+        <audio id="myAudio" preload="none">
+            <source src="./take-a-chance-on-me-from-mamma-mia-original-motion-picture-soundtrack.mp3" type="audio/mpeg">
+        </audio>
+        <div id="playPauseBtn" class="play">
+            <img src="./figuras/notamusical.png" alt="Icono de música">
+        </div>
+    </div>
+    <div class="contador">
+        <div class="bloque">
+          <div id="dias" class="numero"></div>
+          <div class="etiqueta">Días</div>
+        </div>
+    
+        <div class="bloque">
+          <div id="horas" class="numero"></div>
+          <div class="etiqueta">horas</div>
+        </div>
+    
+        <div class="bloque">
+          <div id="minutos" class="numero"></div>
+          <div class="etiqueta">minutos</div>
+        </div>
+    
+        <div class="bloque">
+          <div id="segundos" class="numero"></div>
+          <div class="etiqueta">segundos</div>
+        </div>
+    </div>
+ 
+    <div class="ubicacion">
+        <div data-aos="fade-up"  class="ubicacion-bloque">
+            <img class="icon"   src="./figuras/fiesta.png" alt="fiesta">
+            <h2>FIESTA</h2>
+            <br>
+            <img class="datos" src="./figuras/05.png" alt="">
+            <p><strong>Te espero para festejar juntos en Salón "Janos Ramos II" Av. de Mayo 1848, Ramos Mejía de 13 a 21hs.</strong>  <br> Hace clic para saber como llegar </p>
+            <a class="boton" href="https://www.google.com/maps?gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQIRigAdIBBzUwNWowajeoAgCwAgA&um=1&ie=UTF-8&fb=1&gl=ar&sa=X&geocode=KSVJ-eKxx7yVMXt5UnY3Fy9G&daddr=Av.+de+Mayo+1848,+B1704+Ramos+Mej%C3%ADa,+Provincia+de+Buenos+Aires">CÓMO LLEGAR</a>
+        </div>
+    </div>
+
+    <div   class="dresscode">
+        <img class="icon"  src="./figuras/monno.png" alt="fiesta">
+        <h2  >DRESS CODE - ELEGANTE</h2>
+       
+    </div>
+
+
+    <div class="ubicacion">
+        <br>
+        <div data-aos="fade-up"   class="ubicacion-bloque">
+            <img class="icon" src="./figuras/instagram.png" alt="instagram">
+            <h2>INSTAGRAM</h2>
+            <p>¡No me quiero perder de nada! Compartí las fotos y videos de la fiesta y no olvides etiquetarme.</p>
+            <a class="boton" href="https://www.instagram.com/seere.k/">@seere.k</a>
+        </div>
+        <div data-aos="fade-up"   class="ubicacion-bloque">
+            <img class="icon"  src="./figuras/spotify.png" alt="playlist">
+            <h2>PLAYLIST</h2>
+            <p>¡Quiero que nos divirtamos juntos! <br>
+              Ayudame desde ya a hacer
+              la playlist de mi fiesta con las canciones infaltables,
+              las que queres oír y bailar</p>
+            <a class="boton" href="https://forms.gle/PZ5bWcRdBeBuSqbq6">  RECOMENDAR  </a>
+        </div>
+        <br>
+    </div>
+
+
+        <div class="caja mesaderegalos">
+        <div class="ubicacion-bloque dos" >
+            <img class="icon "  src="./figuras/giftcard.png" alt="giftcard">
+            <h2>MESA DE REGALOS</h2>
+            <p>
+              Mi mejor regalo, en este día tan especial
+              es tu presencia
+              <br>
+              pero si deseas obsequiarme algo... <br>
+              podes ponerlo en un sobre o podes enviarlo usando los siguientes datos </p>
+            
+           
+            <a class="boton" onclick="copyToClipboard('0070236430004037985908')" >CBU</a>
+            <a class="boton" onclick="copyToClipboard('SEREMISXV')">ALIAS</a> <br><br>
+            <p>Hace clic para copiar los datos de la cuenta. <br> Titular: Samara Cerenela Kwist</p>
+        </div>
+    </div>
+
+    <div  class="ubicacion-bloque tres" >
+        <img class="icon" src="./figuras/asistencia.png" alt="asistencia">
+        <h2 data-aos="fade-up" >RSVP</h2>
+        <p data-aos="fade-up" >Para una mejor organización es importante que confirmes tu asistencia.</p>
+       
+        <div data-aos="fade-up"  class="rsvpbotones">
+            <a class="boton1" target="_blank" href="https://forms.gle/ZnTWokkb5kXrK1kK9">CONFIRMAR</a> 
+            <a  class="boton1" target="_blank"  href="https://calendar.app.google/MRhFxTvZtx6fVnZV7">AGENDAR</a>
+        </div>
+    </div>
+
+    <div class="end">
+      <div class="end-names">
+        <img src="./figuras/endnames.png" alt="">
+        <br>
+      </div>
+    </div>
+    <footer>
+        <div class="contenido">
+         <div>
+           <img src="./figuras/logosiquiero.png" alt="icono si quiero">
+             <p>Hecho con &hearts; <br>
+             &#169 <b>Si,quiero!</b> - invitaciones inteligentes.
+             <br> Todos los derechos reservados.</p>
+         </div>
+            
+         <div class="contenido-list">
+             <ul>
+                 <li><a target="_blank" href="https://www.instagram.com/siquiero.arg/"><i class="bi bi-instagram"></i></a></li>
+                 <li><a target="_blank" href="https://www.facebook.com/Invitaciones-web-112187784608681"><i class="bi bi-facebook"></i></a></li>
+                 <li><a target="_blank" href="mailto:siquiero.invitaciones@gmail.com"><i class="bi bi-envelope"></i></a></li>
+               </ul>
+         </div>
+        </div>
+        
+     </footer>
+     <script src="reproductor.js"></script>
+     <script src="script.js"></script> 
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script>
+       AOS.init();
+   </script>
+     <script>
+
+       function copyToClipboard(text) {
+          const tempInput = document.createElement("input");
+          document.body.appendChild(tempInput);
+          tempInput.value = text;
+          tempInput.select();
+          document.execCommand("copy");
+          document.body.removeChild(tempInput);
+          alert(`Copiaste los datos de cuenta "${text}" a tu portapapeles`);
+        }
+      </script>
+</body>
+</html>
